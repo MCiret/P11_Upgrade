@@ -54,7 +54,7 @@ class ResearchViewsTests(TestCase):
         self.assertContains(response, "Veuillez en choisir un :", status_code=200)
 
         # 2) Test of returning the result view when user has chosen one food
-        response2 = self.client.get(reverse('research:result-page',  kwargs={'selected_food': 1}))
+        response2 = self.client.get(reverse('research:result-page', kwargs={'selected_food': 1}))
         self.assertNotIn('many_researched_foods', response2.context.keys())
         self.assertIn('the_researched_food', response2.context.keys())
         self.assertEqual(response2.context['the_researched_food'], mock_food1)

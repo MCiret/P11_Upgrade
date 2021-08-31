@@ -28,9 +28,9 @@ class AccountViewsTests(TestCase):
 
         # Test failing user creation in db using the form :
         response_post2 = self.client.post(reverse('account:user-create'), {
-                                         'email': 'user_test@mail.com',
-                                         'password1': 'toto1598',
-                                         'password2': 'toto159'})
+                                          'email': 'user_test@mail.com',
+                                          'password1': 'toto1598',
+                                          'password2': 'toto159'})
         # Test user create page is redisplayed if form is not validated :
         self.assertContains(response_post2, "Créer le compte", status_code=200)
         self.assertContains(response_post2, "Si vous avez déjà un compte Pur Beurre :", status_code=200)

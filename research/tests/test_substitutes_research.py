@@ -29,19 +29,19 @@ class SubstitutesResearchTestsExceptSQL(TestCase):
         # if user research keywords matches with several foods in db
         mock_filter.return_value = [1, 1, 1, 1, 1]
         self.assertEqual(subr.look_for_foods_matching_user_research("keywords"), {
-                'research_keywords': "keywords",
-                'many_researched_foods': [1, 1, 1, 1, 1],
-            })
+            'research_keywords': "keywords",
+            'many_researched_foods': [1, 1, 1, 1, 1],
+        })
         # if user research keywords doesn't match any food in db
         mock_filter.return_value = []
         self.assertEqual(subr.look_for_foods_matching_user_research("keywords"), {
-                'research_keywords': "keywords"
-            })
+            'research_keywords': "keywords"
+        })
         # if user research keywords matches exactly 1 food in db
         mock_filter.return_value = [1]
         self.assertEqual(subr.look_for_foods_matching_user_research("keywords"), {
-                'the_researched_food': 1
-            })
+            'the_researched_food': 1
+        })
 
     @mock.patch('research.substitutes_research.look_for_substitutes')
     @mock.patch('django.db.models.QuerySet.filter')

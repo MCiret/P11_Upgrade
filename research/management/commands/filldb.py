@@ -69,10 +69,10 @@ class Command(BaseCommand):
                     # ...if this category's name is already in db (whereas it has to be unique),
                     # just select this category and make the food relation :
                     except IntegrityError:
-                        Category.objects.get(name=category).foods.add(food, through_defaults={'category_rank': i+1})
+                        Category.objects.get(name=category).foods.add(food, through_defaults={'category_rank': i + 1})
                     # ...else the new category had been inserted then make the food relation :
                     else:
-                        cat.foods.add(food, through_defaults={'category_rank': i+1})
+                        cat.foods.add(food, through_defaults={'category_rank': i + 1})
 
     @staticmethod
     def is_valid_food(food_dict: dict) -> bool:

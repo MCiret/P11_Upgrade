@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 from django.utils.log import DEFAULT_LOGGING
 import os
-import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,14 +22,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_KEY')
+# SECRET_KEY = os.environ.get('DJANGO_KEY')
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Set "development" as default value then if DJANGO_ENV does not exist then it is not production enviro.
-# DEBUG = False if os.environ.get("DJANGO_ENV", "development") == "production" else True
-DEBUG = False
+DEBUG = False if os.environ.get("DJANGO_ENV", "development") == "production" else True
 
-ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # DEFAULT_LOGGING['handlers']['console']['filters'] = [] # uncomment to have 500 error in terminal
 
@@ -83,12 +82,12 @@ WSGI_APPLICATION = 'project_config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'p8_purbeurre_db',
-        'USER': 'postgres',
-        'PASSWORD': os.environ.get('POSTGRE_PWD'),
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': os.environ.get("DB_ENGINE"),
+        'NAME': os.environ.get("DB_NAME"),
+        'USER': os.environ.get("DB_USER"),
+        'PASSWORD': os.environ.get("DB_PASSWORD"),
+        'HOST': os.environ.get("DB_HOST"),
+        'PORT': os.environ.get("DB_PORT"),
     }
 }
 
@@ -129,7 +128,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-# COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = [
@@ -143,6 +141,3 @@ AUTH_USER_MODEL = 'account.User'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# Deployment
-django_heroku.settings(locals())

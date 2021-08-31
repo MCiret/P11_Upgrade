@@ -1,0 +1,6 @@
+env/
+.vscode/
+.git/
+.env.dev
+.env.prod
+.env.prod.db

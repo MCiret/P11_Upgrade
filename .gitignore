@@ -1,6 +1,10 @@
+.vscode/
 env/
 t
 static/node_modules/
 static/src/
 .coverage
 htmlcov/
+.env.dev
+.env.prod
+.env.prod.db
