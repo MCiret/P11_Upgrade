@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'project_config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': os.environ.get("DB_ENGINE", "django.db.backends.postgresql"),
-        'NAME': os.environ.get("DB_NAME", "pg_db_tests"),
+        'NAME': os.environ.get("DB_NAME", "p8_purbeurre_db"),
         'USER': os.environ.get("DB_USER", "postgres"),
         'PASSWORD': os.environ.get("DB_PASSWORD"),
         'HOST': os.environ.get("DB_HOST", "localhost"),
