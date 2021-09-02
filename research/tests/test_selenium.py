@@ -1,5 +1,5 @@
 from django.test import LiveServerTestCase
-from selenium.webdriver import Firefox
+from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
@@ -7,7 +7,9 @@ import time
 class ResearchFormTest(LiveServerTestCase):
 
     def setUp(self):
-        self.selenium = Firefox()
+        self.options = webdriver.FirefoxOptions()
+        self.options.headless = True
+        self.selenium = webdriver.Firefox(firefox_options=self.options)
         self.selenium.get(self.live_server_url)
 
     def tearDown(self):

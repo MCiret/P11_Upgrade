@@ -1710,3 +1710,29 @@ JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILU
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1630588926699	geckodriver	INFO	Listening on 127.0.0.1:35949
+1630588926704	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuVn5Or"
+1630588927883	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileuVn5Or/search.json.mozlz4", (void 0)))
+1630588930540	Marionette	INFO	Listening on port 41619
+1630588930637	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1630588941807	Marionette	INFO	Stopped listening on port 41619
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630588944081	geckodriver	INFO	Listening on 127.0.0.1:44431
+1630588945092	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8AOCvT"
+1630588946428	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8AOCvT/search.json.mozlz4", (void 0)))
+1630588949094	Marionette	INFO	Listening on port 35023
+1630588949132	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1630588960148	Marionette	INFO	Stopped listening on port 35023
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
