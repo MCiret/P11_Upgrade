@@ -1,15 +1,14 @@
-from django.test import TestCase
+from django.test import LiveServerTestCase
 from selenium.webdriver import Firefox
 from selenium.webdriver.common.keys import Keys
 import time
 
 
-class ResearchFormTest(TestCase):
+class ResearchFormTest(LiveServerTestCase):
 
     def setUp(self):
         self.selenium = Firefox()
-        # url to visit
-        self.selenium.get('http://127.0.0.1:8000/')
+        self.selenium.get(self.live_server_url)
 
     def tearDown(self):
         self.selenium.close()

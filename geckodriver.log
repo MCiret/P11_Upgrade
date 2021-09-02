@@ -1666,3 +1666,47 @@ JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1630574400194	geckodriver	INFO	Listening on 127.0.0.1:50747
+1630574401176	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekScb0K"
+1630574403722	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekScb0K/search.json.mozlz4", (void 0)))
+1630574408134	Marionette	INFO	Listening on port 40115
+1630574408467	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630574408487	geckodriver	INFO	Listening on 127.0.0.1:56317
+1630574409492	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileU54kT4"
+1630574411723	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileU54kT4/search.json.mozlz4", (void 0)))
+1630574414564	Marionette	INFO	Listening on port 41839
+1630574414629	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630574415537	Marionette	INFO	Stopped listening on port 40115
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1630574463543	geckodriver	INFO	Listening on 127.0.0.1:37639
+1630574463549	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHCKKUC"
+1630574464954	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHCKKUC/search.json.mozlz4", (void 0)))
+1630574467741	Marionette	INFO	Listening on port 34511
+1630574467789	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1630574480364	Marionette	INFO	Stopped listening on port 34511
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630574481466	Marionette	INFO	Stopped listening on port 41839
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1630574482903	geckodriver	INFO	Listening on 127.0.0.1:42651
+1630574483916	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOszESe"
+1630574485153	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOszESe/search.json.mozlz4", (void 0)))
+1630574487948	Marionette	INFO	Listening on port 33705
+1630574488059	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1630574499181	Marionette	INFO	Stopped listening on port 33705
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
