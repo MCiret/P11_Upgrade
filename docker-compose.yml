@@ -12,8 +12,8 @@ services:
   web:
     image: devimg:pb
     build:
-      context: .
-      dockerfile: ./dockerfiles/app/Dockerfile
+      context: ./pur_beurre_app
+      dockerfile: Dockerfile
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"

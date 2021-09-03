@@ -1,8 +1,8 @@
 .vscode/
 env/
-t
-static/node_modules/
-static/src/
+pur_beurre_app/t
+pur_beurre_app/static/node_modules/
+pur_beurre_app/static/src/
 .coverage
 htmlcov/
 .env.dev
