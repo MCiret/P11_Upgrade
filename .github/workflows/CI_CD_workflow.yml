@@ -107,7 +107,6 @@ jobs:
           mv /tmp/.buildx-cache-web-new /tmp/.buildx-cache-web
           mv /tmp/.buildx-cache-nginx-new /tmp/.buildx-cache-nginx
 
-
       - name: Save images
         run: docker save -o purbeurre_images.tar web_img nginx_img
 
