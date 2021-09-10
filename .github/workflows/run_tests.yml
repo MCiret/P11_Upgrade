@@ -109,8 +109,8 @@ jobs:
 
       - name: sftp to upload files to remote (prod) server
         run: |
-          sftp ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} <<< $'purbeurre_images.tar'
-          ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} <<< $'docker-compose.prod.yml'
+          sftp ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/root <<< $'put purbeurre_images.tar'
+          sftp ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/root <<< $'put docker-compose.prod.yml'
 
       - name: SSH to remote (prod) server
         uses: appleboy/ssh-action@master
