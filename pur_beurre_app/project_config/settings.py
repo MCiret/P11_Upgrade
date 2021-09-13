@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 from django.utils.log import DEFAULT_LOGGING
 import os
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,6 +33,20 @@ DEBUG = False if os.environ.get("DJANGO_ENV", "development") == "production" els
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '51.15.239.110']
 
 # DEFAULT_LOGGING['handlers']['console']['filters'] = [] # uncomment to have 500 error in terminal
+
+sentry_sdk.init(
+    dsn="https://384c1c3d226040f0a2ab392b12e5d5ca@o998064.ingest.sentry.io/5956506",
+    integrations=[DjangoIntegration()],
+
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for performance monitoring.
+    # We recommend adjusting this value in production.
+    traces_sample_rate=1.0,
+
+    # If you wish to associate users to errors (assuming you are using
+    # django.contrib.auth) you may enable sending PII data.
+    send_default_pii=True
+)
 
 INSTALLED_APPS = [
     'django.contrib.admin',

@@ -40,9 +40,8 @@ jobs:
 
     - name: Test with unittest + selenium
       run: |
-        echo "tests are not run to save time..."
-      # cd pur_beurre_app/
-      # python manage.py test --verbosity 2
+        cd pur_beurre_app/
+        python manage.py test
 
   docker_build_image:
     runs-on: ubuntu-latest
@@ -130,6 +129,7 @@ jobs:
           script: |
             docker load -i purbeurre_images.tar
             docker-compose -f docker-compose.prod.yml up -d
+            docker image prune --force
 
 
 
