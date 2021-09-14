@@ -10,15 +10,18 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
   web:
-    image: devimg:pb
+    image: web_img_dev
     build:
       context: ./pur_beurre_app
       dockerfile: Dockerfile
-    command: python manage.py runserver 0.0.0.0:8000
+    command: newrelic-admin run-program gunicorn project_config.wsgi:application --bind 0.0.0.0:8000
+    # command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
     env_file:
       - ./.env.dev
+    environment:
+      NEW_RELIC_APP_NAME: P10_pur_beurre_app_dev
     depends_on:
       - db
 
