@@ -16,13 +16,13 @@ jobs:
         ports:
           - 5432:5432
         env:
-          POSTGRES_DB: p10_db_ci_test
+          POSTGRES_DB: p11_db_ci_test
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: ${{ secrets.DB_PG_PWD }}
     env:
       DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
       DB_PASSWORD: ${{ secrets.DB_PG_PWD }}
-      DB_NAME: p10_db_ci_test
+      DB_NAME: p11_db_ci_test
 
     steps:
     - name: Checking out code from the repository
@@ -57,25 +57,6 @@ jobs:
         with:
           version: latest
 
-      - name: Cache Docker layers (nginx img)
-        uses: actions/cache@v2
-        with:
-          path: /tmp/.buildx-cache-nginx
-          key: ${{ runner.os }}-single-buildx-nginximg-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-single-buildx-nginximg-
-      - name: Build production nginx image
-        uses: docker/build-push-action@v2
-        with:
-          context: ./nginx/
-          builder: ${{ steps.buildx.outputs.name }}
-          file: nginx/Dockerfile
-          push: false
-          load: true
-          tags: nginx_img
-          cache-from: type=local,src=/tmp/.buildx-cache-nginx
-          cache-to: type=local,dest=/tmp/.buildx-cache-nginx-new
-
       - name: Cache Docker layers (web img)
         uses: actions/cache@v2
         with:
@@ -102,12 +83,10 @@ jobs:
       - name: Move cache
         run: |
           rm -rf /tmp/.buildx-cache-web
-          rm -rf /tmp/.buildx-cache-nginx
           mv /tmp/.buildx-cache-web-new /tmp/.buildx-cache-web
-          mv /tmp/.buildx-cache-nginx-new /tmp/.buildx-cache-nginx
 
       - name: Save images
-        run: docker save -o purbeurre_images.tar web_img nginx_img
+        run: docker save -o purbeurre_images.tar web_img
 
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
@@ -130,6 +109,3 @@ jobs:
             docker load -i purbeurre_images.tar
             docker-compose -f docker-compose.prod.yml up -d
             docker image prune --force
-
-
-
