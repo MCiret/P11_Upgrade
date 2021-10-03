@@ -16,6 +16,9 @@ services:
       - ./.env.prod.db
   web:
     image: web_img
+    build:
+      context: ./pur_beurre_app
+      dockerfile: Dockerfile.prod
     command: newrelic-admin run-program gunicorn project_config.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - static_volume:/home/app/web/staticfiles
@@ -24,15 +27,20 @@ services:
     env_file:
       - ./.env.prod
     environment:
-      NEW_RELIC_APP_NAME: P10_purbeurre_scaleway
+      NEW_RELIC_APP_NAME: P11_purbeurre_scaleway
     depends_on:
       - db
   nginx:
-    image: nginx_img
+    image: nginx:1.21-alpine
     volumes:
+      - ./nginx:/etc/nginx/conf.d
       - static_volume:/home/app/web/staticfiles
+      - /var/www/html:/var/www/html
+      - /etc/letsencrypt:/etc/letsencrypt
+      - /var/lib/letsencrypt:/var/lib/letsencrypt
     ports:
-      - 1337:80
+      - 80:80
+      - 443:443
     depends_on:
       - web
 

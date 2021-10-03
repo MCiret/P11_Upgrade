@@ -8,4 +8,3 @@ htmlcov/
 .env.dev
 .env.prod
 .env.prod.db
-my_secrets/
