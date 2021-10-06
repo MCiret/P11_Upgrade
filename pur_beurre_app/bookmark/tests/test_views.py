@@ -49,6 +49,10 @@ class BookmarkViewsTestsWithTransaction(TransactionTestCase):
         response = self.client.get(reverse('bookmark:bookmark-add', kwargs={'selected_food': 1}),
                                    {'bookmark_food_barcode': 3}, follow=True)
         self.assertContains(response, "food1", status_code=200)
+        if b'food2' in response.content and b'food3' not in response.content:
+            print("Next assertion in this test fails because the substitute research algorithm seems not to work..\
+                   Instead of returning the best nutriscore, it returns the worst.")
         self.assertContains(response, "food3", status_code=200)
+        self.assertNotContains(response, "food2", status_code=200)
         self.assertContains(response, "Sauvegardé", status_code=200)
         self.assertNotContains(response, "Sauvegarder", status_code=200)

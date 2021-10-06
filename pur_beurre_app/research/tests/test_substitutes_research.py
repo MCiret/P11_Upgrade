@@ -110,6 +110,11 @@ class SubstitutesResearchTestsOnlySQL(TransactionTestCase):
         crud.create_category(food_barcode="4", category_name="c4", category_rank="1")
         crud.create_category(food_barcode="4", category_name="c5", category_rank="2")
         crud.create_category(food_barcode="4", category_name="c6", category_rank="3")
+        # Not a substitute for the researched food because of nutriscore :
+        crud.create_food("5", "d", "food5")
+        crud.create_category(food_barcode="5", category_name="c1", category_rank="1")
+        crud.create_category(food_barcode="5", category_name="c2", category_rank="2")
+        crud.create_category(food_barcode="5", category_name="c5", category_rank="3")
 
     def test_sql_in_look_for_substitutes_function(self):
         # Get categories id for the researched food
@@ -117,8 +122,12 @@ class SubstitutesResearchTestsOnlySQL(TransactionTestCase):
                               Category.objects.get(name='c2').id,
                               Category.objects.get(name='c3').id]
 
-        self.assertQuerysetEqual(subr.look_for_substitutes(food_categories_id, "c"),
-                                                          (Food.objects.filter(barcode="2")), ordered=False)
+        substituted_food = subr.look_for_substitutes(food_categories_id, "c")
+        if substituted_food[0].name == "food5":
+            print("Next assertion in this test fails because the substitute research algorithm seems not to work..\
+                   Instead of returning the best nutriscore, it returns the worst.")
+        self.assertQuerysetEqual(substituted_food, (Food.objects.filter(barcode="2")), ordered=False)
+
 
     def test_sql_in_look_for_foods_matching_user_research_function(self):
         # With "food" research keyword, all foods in db should be returned :

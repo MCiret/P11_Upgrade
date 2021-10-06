@@ -1826,3 +1826,578 @@ JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILU
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1633423510013	geckodriver	INFO	Listening on 127.0.0.1:53385
+1633423510969	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemXu8uz"
+*** You are running in headless mode.
+1633423513749	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemXu8uz/search.json.mozlz4", (void 0)))
+1633423518230	Marionette	INFO	Listening on port 36785
+1633423518583	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633423530197	Marionette	INFO	Stopped listening on port 36785
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633423533231	geckodriver	INFO	Listening on 127.0.0.1:37079
+1633423533236	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEWJJyr"
+*** You are running in headless mode.
+1633423535076	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEWJJyr/search.json.mozlz4", (void 0)))
+1633423537520	Marionette	INFO	Listening on port 38665
+1633423537631	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633423548701	Marionette	INFO	Stopped listening on port 38665
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633423766090	geckodriver	INFO	Listening on 127.0.0.1:53345
+1633423766096	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3guyYO"
+*** You are running in headless mode.
+1633423767467	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3guyYO/search.json.mozlz4", (void 0)))
+1633423769780	Marionette	INFO	Listening on port 33017
+1633423769823	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633423780957	Marionette	INFO	Stopped listening on port 33017
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633423783375	geckodriver	INFO	Listening on 127.0.0.1:42051
+1633423783380	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileg8Qm7B"
+*** You are running in headless mode.
+1633423784755	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileg8Qm7B/search.json.mozlz4", (void 0)))
+1633423787069	Marionette	INFO	Listening on port 33303
+1633423787306	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633423798431	Marionette	INFO	Stopped listening on port 33303
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633436235733	geckodriver	INFO	Listening on 127.0.0.1:56841
+1633436236683	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekjOCDT"
+*** You are running in headless mode.
+1633436238229	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekjOCDT/search.json.mozlz4", (void 0)))
+1633436240624	Marionette	INFO	Listening on port 37015
+1633436240912	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633436252312	Marionette	INFO	Stopped listening on port 37015
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633436255132	geckodriver	INFO	Listening on 127.0.0.1:50007
+1633436255136	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1ob3gA"
+*** You are running in headless mode.
+1633436256630	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1ob3gA/search.json.mozlz4", (void 0)))
+1633436258736	Marionette	INFO	Listening on port 35675
+1633436258770	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633436270677	Marionette	INFO	Stopped listening on port 35675
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633436638361	geckodriver	INFO	Listening on 127.0.0.1:60191
+1633436638366	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFzTflP"
+*** You are running in headless mode.
+1633436639976	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFzTflP/search.json.mozlz4", (void 0)))
+1633436642304	Marionette	INFO	Listening on port 40359
+1633436642433	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633436653588	Marionette	INFO	Stopped listening on port 40359
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633436656053	geckodriver	INFO	Listening on 127.0.0.1:59787
+1633436656057	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGayfuA"
+*** You are running in headless mode.
+1633436657418	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileGayfuA/search.json.mozlz4", (void 0)))
+1633436659598	Marionette	INFO	Listening on port 39155
+1633436659875	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633436670994	Marionette	INFO	Stopped listening on port 39155
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633437945380	geckodriver	INFO	Listening on 127.0.0.1:49365
+1633437945384	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerUEUu6"
+*** You are running in headless mode.
+1633437946774	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerUEUu6/search.json.mozlz4", (void 0)))
+1633437949100	Marionette	INFO	Listening on port 34285
+1633437949132	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633437960468	Marionette	INFO	Stopped listening on port 34285
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633437965865	geckodriver	INFO	Listening on 127.0.0.1:34431
+1633437965869	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileG4pPvw"
+*** You are running in headless mode.
+1633437972579	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileG4pPvw/search.json.mozlz4", (void 0)))
+1633437974919	Marionette	INFO	Listening on port 42591
+1633437975207	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633437986568	Marionette	INFO	Stopped listening on port 42591
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  Message: Error: Data is not ready.
+  Stack:
+    get data@resource://gre/modules/JSONFile.jsm:186:13
+getListeners@resource://gre/modules/PushBroadcastService.jsm:66:5
+observe@resource://gre/modules/AsyncShutdown.jsm:575:16
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633440169008	geckodriver	INFO	Listening on 127.0.0.1:41107
+1633440169961	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled3dAvi"
+*** You are running in headless mode.
+1633440176634	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiled3dAvi/search.json.mozlz4", (void 0)))
+1633440182494	Marionette	INFO	Listening on port 38611
+1633440182903	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440199206	Marionette	INFO	Stopped listening on port 38611
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633440202150	geckodriver	INFO	Listening on 127.0.0.1:37317
+1633440202154	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefE8F8x"
+*** You are running in headless mode.
+1633440203985	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilefE8F8x/search.json.mozlz4", (void 0)))
+1633440206686	Marionette	INFO	Listening on port 43067
+1633440207044	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440218239	Marionette	INFO	Stopped listening on port 43067
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633440385725	geckodriver	INFO	Listening on 127.0.0.1:34461
+1633440386729	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejVcdmM"
+*** You are running in headless mode.
+1633440389326	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejVcdmM/search.json.mozlz4", (void 0)))
+1633440392386	Marionette	INFO	Listening on port 39025
+1633440392467	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440403896	Marionette	INFO	Stopped listening on port 39025
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633440406545	geckodriver	INFO	Listening on 127.0.0.1:52401
+1633440406550	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilel9xV8G"
+*** You are running in headless mode.
+1633440407978	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilel9xV8G/search.json.mozlz4", (void 0)))
+1633440410207	Marionette	INFO	Listening on port 39127
+1633440410475	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440421450	Marionette	INFO	Stopped listening on port 39127
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633440527284	geckodriver	INFO	Listening on 127.0.0.1:60563
+1633440527299	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileL31sJE"
+*** You are running in headless mode.
+1633440528921	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileL31sJE/search.json.mozlz4", (void 0)))
+1633440531308	Marionette	INFO	Listening on port 36487
+1633440531493	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440543610	Marionette	INFO	Stopped listening on port 36487
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633440546218	geckodriver	INFO	Listening on 127.0.0.1:53731
+1633440546223	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilef80Egy"
+*** You are running in headless mode.
+1633440547775	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilef80Egy/search.json.mozlz4", (void 0)))
+1633440549969	Marionette	INFO	Listening on port 36755
+1633440550137	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440561256	Marionette	INFO	Stopped listening on port 36755
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633440660952	geckodriver	INFO	Listening on 127.0.0.1:54833
+1633440660959	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenC6W83"
+*** You are running in headless mode.
+1633440662689	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenC6W83/search.json.mozlz4", (void 0)))
+1633440665450	Marionette	INFO	Listening on port 46721
+1633440666909	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440678061	Marionette	INFO	Stopped listening on port 46721
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633440680709	geckodriver	INFO	Listening on 127.0.0.1:46159
+1633440680713	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4tRY8L"
+*** You are running in headless mode.
+1633440682341	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4tRY8L/search.json.mozlz4", (void 0)))
+1633440684886	Marionette	INFO	Listening on port 41777
+1633440684938	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440696110	Marionette	INFO	Stopped listening on port 41777
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633440756363	geckodriver	INFO	Listening on 127.0.0.1:56589
+1633440756369	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevKE187"
+*** You are running in headless mode.
+1633440758003	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevKE187/search.json.mozlz4", (void 0)))
+1633440760636	Marionette	INFO	Listening on port 39221
+1633440760734	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440772597	Marionette	INFO	Stopped listening on port 39221
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633440776829	geckodriver	INFO	Listening on 127.0.0.1:46567
+1633440776834	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLFdB92"
+*** You are running in headless mode.
+1633440778308	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLFdB92/search.json.mozlz4", (void 0)))
+1633440780643	Marionette	INFO	Listening on port 36583
+1633440780671	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440792192	Marionette	INFO	Stopped listening on port 36583
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633440824426	geckodriver	INFO	Listening on 127.0.0.1:54043
+1633440825430	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXNYMlc"
+*** You are running in headless mode.
+1633440828085	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXNYMlc/search.json.mozlz4", (void 0)))
+1633440830408	Marionette	INFO	Listening on port 42515
+1633440830651	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440841814	Marionette	INFO	Stopped listening on port 42515
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633440844476	geckodriver	INFO	Listening on 127.0.0.1:57623
+1633440844480	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5teI2p"
+*** You are running in headless mode.
+1633440846183	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5teI2p/search.json.mozlz4", (void 0)))
+1633440848618	Marionette	INFO	Listening on port 33341
+1633440848909	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633440860138	Marionette	INFO	Stopped listening on port 33341
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633440988096	geckodriver	INFO	Listening on 127.0.0.1:45675
+1633440988101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGgUmtj"
+*** You are running in headless mode.
+1633440989659	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileGgUmtj/search.json.mozlz4", (void 0)))
+1633440991946	Marionette	INFO	Listening on port 44343
+1633440992228	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633441003498	Marionette	INFO	Stopped listening on port 44343
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633441005625	geckodriver	INFO	Listening on 127.0.0.1:47663
+1633441005630	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEcsV5t"
+*** You are running in headless mode.
+1633441007095	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEcsV5t/search.json.mozlz4", (void 0)))
+1633441009679	Marionette	INFO	Listening on port 36715
+1633441009762	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633441020924	Marionette	INFO	Stopped listening on port 36715
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633504527284	geckodriver	INFO	Listening on 127.0.0.1:38579
+1633504528251	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSJgRpT"
+*** You are running in headless mode.
+1633504530193	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSJgRpT/search.json.mozlz4", (void 0)))
+1633504533357	Marionette	INFO	Listening on port 36695
+1633504533657	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633504545635	Marionette	INFO	Stopped listening on port 36695
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633504547933	geckodriver	INFO	Listening on 127.0.0.1:40069
+1633504547938	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyhB32g"
+*** You are running in headless mode.
+1633504549359	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyhB32g/search.json.mozlz4", (void 0)))
+1633504551945	Marionette	INFO	Listening on port 32829
+1633504552174	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633504563295	Marionette	INFO	Stopped listening on port 32829
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633504784685	geckodriver	INFO	Listening on 127.0.0.1:41257
+1633504784689	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDSvsGJ"
+*** You are running in headless mode.
+1633504786091	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDSvsGJ/search.json.mozlz4", (void 0)))
+1633504788340	Marionette	INFO	Listening on port 43315
+1633504788509	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633504799698	Marionette	INFO	Stopped listening on port 43315
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633504802135	geckodriver	INFO	Listening on 127.0.0.1:39229
+1633504802139	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileX6lg6Z"
+*** You are running in headless mode.
+1633504804077	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileX6lg6Z/search.json.mozlz4", (void 0)))
+1633504806471	Marionette	INFO	Listening on port 33787
+1633504806572	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633504817778	Marionette	INFO	Stopped listening on port 33787
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633504911611	geckodriver	INFO	Listening on 127.0.0.1:48203
+1633504911616	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileq9EihG"
+*** You are running in headless mode.
+1633504913117	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileq9EihG/search.json.mozlz4", (void 0)))
+1633504915318	Marionette	INFO	Listening on port 34629
+1633504915536	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633504926742	Marionette	INFO	Stopped listening on port 34629
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633504929173	geckodriver	INFO	Listening on 127.0.0.1:59289
+1633504929179	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1aZei9"
+*** You are running in headless mode.
+1633504930632	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1aZei9/search.json.mozlz4", (void 0)))
+1633504933060	Marionette	INFO	Listening on port 41275
+1633504933124	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633504944393	Marionette	INFO	Stopped listening on port 41275
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633504957913	geckodriver	INFO	Listening on 127.0.0.1:42045
+1633504957918	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileW6vNQT"
+*** You are running in headless mode.
+1633504959493	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileW6vNQT/search.json.mozlz4", (void 0)))
+1633504961730	Marionette	INFO	Listening on port 41411
+1633504961889	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633504973103	Marionette	INFO	Stopped listening on port 41411
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633504975860	geckodriver	INFO	Listening on 127.0.0.1:58467
+1633504975865	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehgQxXS"
+*** You are running in headless mode.
+1633504977996	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehgQxXS/search.json.mozlz4", (void 0)))
+1633504980520	Marionette	INFO	Listening on port 40569
+1633504980791	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633504992920	Marionette	INFO	Stopped listening on port 40569
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633505500836	geckodriver	INFO	Listening on 127.0.0.1:37003
+1633505500842	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2VahuW"
+*** You are running in headless mode.
+1633505502353	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2VahuW/search.json.mozlz4", (void 0)))
+1633505505477	Marionette	INFO	Listening on port 46637
+1633505505640	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633505516895	Marionette	INFO	Stopped listening on port 46637
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633505519442	geckodriver	INFO	Listening on 127.0.0.1:37897
+1633505519447	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileREqXHJ"
+*** You are running in headless mode.
+1633505521033	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileREqXHJ/search.json.mozlz4", (void 0)))
+1633505525438	Marionette	INFO	Listening on port 43333
+1633505525558	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633505536637	Marionette	INFO	Stopped listening on port 43333
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633512692685	geckodriver	INFO	Listening on 127.0.0.1:38479
+1633512692690	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletINHS1"
+*** You are running in headless mode.
+1633512694579	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletINHS1/search.json.mozlz4", (void 0)))
+1633512696902	Marionette	INFO	Listening on port 41605
+1633512697221	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633512708434	Marionette	INFO	Stopped listening on port 41605
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633512711078	geckodriver	INFO	Listening on 127.0.0.1:42727
+1633512711085	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefuw3nt"
+*** You are running in headless mode.
+1633512712448	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilefuw3nt/search.json.mozlz4", (void 0)))
+1633512715384	Marionette	INFO	Listening on port 38859
+1633512715646	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633512726908	Marionette	INFO	Stopped listening on port 38859
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633513237433	geckodriver	INFO	Listening on 127.0.0.1:46775
+1633513237438	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelFdCft"
+*** You are running in headless mode.
+1633513239297	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelFdCft/search.json.mozlz4", (void 0)))
+1633513241514	Marionette	INFO	Listening on port 43771
+1633513241782	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633513253368	Marionette	INFO	Stopped listening on port 43771
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633513255699	geckodriver	INFO	Listening on 127.0.0.1:48271
+1633513256699	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelCb3Wf"
+*** You are running in headless mode.
+1633513258614	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelCb3Wf/search.json.mozlz4", (void 0)))
+1633513260822	Marionette	INFO	Listening on port 44385
+1633513261387	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633513273378	Marionette	INFO	Stopped listening on port 44385
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633513333357	geckodriver	INFO	Listening on 127.0.0.1:51827
+1633513333362	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSzze7C"
+*** You are running in headless mode.
+1633513334845	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSzze7C/search.json.mozlz4", (void 0)))
+1633513337080	Marionette	INFO	Listening on port 46097
+1633513337274	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633513348815	Marionette	INFO	Stopped listening on port 46097
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633513351142	geckodriver	INFO	Listening on 127.0.0.1:54443
+1633513351147	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileO9dL5k"
+*** You are running in headless mode.
+1633513352564	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileO9dL5k/search.json.mozlz4", (void 0)))
+1633513354917	Marionette	INFO	Listening on port 42579
+1633513354979	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+JavaScript error: https://cdn.startbootstrap.com/sb-forms-latest.js, line 5: Error: GET_ELEMENTS: page-top -> form[data-sb-form-api-token]
+1633513366178	Marionette	INFO	Stopped listening on port 42579
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

@@ -52,7 +52,7 @@ Features
         - If the account is created, user is redicted to home page.
         - Else if the account is not created (email already exists or wrong password) the page is redisplayed and a message informs user of the reason why.
 
-    2.2) Unlogged user on account creation page (see 2.1) could use the lnik "Cliquez ici pour vous connecter..." to access the account login page.
+    2.2) Unlogged user on account creation page (see 2.1) could use the link "Cliquez ici pour vous connecter..." to access the account login page.
 
         - If the user is logged, he is redicted to home page.
         - Else if the user is not logged (wrong email or password) the page is redisplayed and a message informs user of the problem.
@@ -63,7 +63,11 @@ Features
 
         - If the user had already bookmarked a substitute food product, the text "Sauvegardé 🗹" is displayed below the picture.
 
-    3.1) Logged user could click on carot icon (header menu) to diplay all his bookmarked food products.
+    3.2) Logged user could click on carot icon (header menu) to diplay all his bookmarked food products.
+
+    3.3) Logged user could modify his password from "Mon compte" page using the dedicated form. He could not re-use an ex-password.
+
+    3.4) Not still logged but having an account, user could use the link "J'ai oublié mon mot de passe" on the "Connexion à un compte Pur Beurre" page.
 
 
 INSTALLATION
@@ -72,7 +76,7 @@ INSTALLATION
 Application
 -----------
 
-1) Download the project : use the "Code" (green button) and unzip the P8_PurBeurre_WebApp.zip file.
+1) Download the project : use the "Code" (green button) and unzip the P11_Upgrade.zip file.
 2) Python3 comes with Python Package Manager (pip) else you have to install it (https://pip.pypa.io/en/stable/installing/)
 
 3) Set up a virtual environment :
