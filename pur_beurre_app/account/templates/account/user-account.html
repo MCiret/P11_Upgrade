@@ -10,8 +10,19 @@
         </div>
         <div class="row gx-4 gx-lg-5 align-items-center justify-content-center text-center">
             <div class="col-lg-8 align-self-end">
-                <h2 class="mt-5 text-center text-moules mt-0">{{ user_mail }}</h2>
+                <h3 class="mt-5 text-center text-moules">E-mail (identifiant de connexion) du compte : {{ user_mail }}</h3>
             </div>
+        </div>
+        <hr class="divider">
+        <div class="row gx-4 gx-lg-5 align-items-center justify-content-center text-center">
+            <h4 class="text-moules font-weight-bold">Modification du mot de passe du compte</h4>
+            <h6 class="mb-3 text-moules font-weight-bold">🛈 Veuillez choisir un mot de passe que vous n'avez jamais utilisé pour vous connecter à votre compte Pur Beurre depuis sa création. 🛈</h6>
+            <form class="text-moules justify-content-center" method="POST" action="{% url 'account:user-account' %}">
+                {% csrf_token %} <!-- Afficher le csrf_token ce qui permet de le générer et automatiquement inclus dans le formulaire -->
+
+                {{ form.as_p }}
+                <input class="btn btn-primary btn-xl" type='submit' value="Valider le nouveau mot de passe"/>
+            </form>
         </div>
     </div>
 </header>

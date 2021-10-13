@@ -10,7 +10,7 @@ class BookmarkViewsTests(TestCase):
         crud.create_user("user_test@gmail.com", "titi6789")
         self.client.login(username="user_test@gmail.com", password="titi6789")
         response_user_logged = self.client.get(reverse('bookmark:bookmark-page'))
-        self.assertContains(response_user_logged, "Vos aliments substituts sauvegardés", status_code=200)
+        self.assertTemplateUsed(response_user_logged, "bookmark/bookmark.html")
         self.assertContains(response_user_logged, "Vous n'avez aucun aliment substitut sauvegardé...", status_code=200)
 
         # Test for user with bookmarks
@@ -19,7 +19,6 @@ class BookmarkViewsTests(TestCase):
         crud.create_bookmark("user_test@gmail.com", "1")
         crud.create_bookmark("user_test@gmail.com", "2")
         response_user_logged2 = self.client.get(reverse('bookmark:bookmark-page'))
-        self.assertContains(response_user_logged2, "Vos aliments substituts sauvegardés", status_code=200)
         self.assertNotContains(response_user_logged2, "Vous n'avez aucun aliment substitut sauvegardé...",
                                status_code=200)
         self.assertContains(response_user_logged2, "food1")
@@ -48,6 +47,7 @@ class BookmarkViewsTestsWithTransaction(TransactionTestCase):
 
         response = self.client.get(reverse('bookmark:bookmark-add', kwargs={'selected_food': 1}),
                                    {'bookmark_food_barcode': 3}, follow=True)
+        self.assertTemplateUsed(response, "research/result.html")
         self.assertContains(response, "food1", status_code=200)
         if b'food2' in response.content and b'food3' not in response.content:
             print("Next assertion in this test fails because the substitute research algorithm seems not to work..\
@@ -55,4 +55,3 @@ class BookmarkViewsTestsWithTransaction(TransactionTestCase):
         self.assertContains(response, "food3", status_code=200)
         self.assertNotContains(response, "food2", status_code=200)
         self.assertContains(response, "Sauvegardé", status_code=200)
-        self.assertNotContains(response, "Sauvegarder", status_code=200)

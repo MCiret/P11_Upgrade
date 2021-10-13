@@ -9,7 +9,7 @@ class ResearchViewsTests(TestCase):
     def test_home_view(self):
         # test with unlogged user :
         response_no_user_logged = self.client.get(reverse('research:home-page'))
-        self.assertContains(response_no_user_logged, "Du gras, oui, mais de qualité !", status_code=200)
+        self.assertTemplateUsed(response_no_user_logged, "research/home.html")
         self.assertNotContains(response_no_user_logged, "href=/accounts/logout")
         self.assertContains(response_no_user_logged, "href=/accounts/create/")
 
@@ -17,12 +17,12 @@ class ResearchViewsTests(TestCase):
         crud.create_user("user_test", "titi6789")
         self.client.login(username="user_test", password="titi6789")
         response_user_logged = self.client.get(reverse('research:home-page'))
-        self.assertContains(response_user_logged, "Du gras, oui, mais de qualité !", status_code=200)
         self.assertContains(response_user_logged, "accounts/logout")
         self.assertNotContains(response_user_logged, "accounts/create")
 
     def test_result_view_if_researched_food_not_in_db(self):
         response = self.client.get(reverse('research:form-page'), {'research': "absent food"})
+        self.assertTemplateUsed(response, "research/result.html")
         self.assertIn('research_keywords', response.context.keys())
         self.assertNotIn('many_researched_foods', response.context.keys())
         self.assertEqual(response.context['research_keywords'], 'absent food')
@@ -32,6 +32,7 @@ class ResearchViewsTests(TestCase):
         mock_food = crud.create_food("1", "c", "food1")
 
         response = self.client.get(reverse('research:form-page'), {'research': "od1"})
+        self.assertTemplateUsed(response, "research/result.html")
         self.assertIn('the_researched_food', response.context.keys())
         self.assertEqual(response.context['the_researched_food'], mock_food)
         self.assertContains(response, mock_food.name, status_code=200)
@@ -45,16 +46,17 @@ class ResearchViewsTests(TestCase):
         # If user's research keywords corresponds to many foods in database, 2 tests to do :
         # 1) Test of view returning several foods to be chosen by user
         response = self.client.get(reverse('research:form-page'), {'research': "od"})
+        self.assertTemplateUsed(response, "research/result.html")
         self.assertIn('research_keywords', response.context.keys())
         self.assertIn('many_researched_foods', response.context.keys())
         self.assertEqual(list(response.context['many_researched_foods']),
                          [mock_food1, mock_food2, mock_food3])
         self.assertQuerysetEqual(response.context['many_researched_foods'], Food.objects.all(), ordered=False)
         self.assertContains(response, "Plusieurs aliments correspondent à votre recherche...", status_code=200)
-        self.assertContains(response, "Veuillez en choisir un :", status_code=200)
 
         # 2) Test of returning the result view when user has chosen one food
         response2 = self.client.get(reverse('research:result-page', kwargs={'selected_food': 1}))
+        self.assertTemplateUsed(response2, "research/result.html")
         self.assertNotIn('many_researched_foods', response2.context.keys())
         self.assertIn('the_researched_food', response2.context.keys())
         self.assertEqual(response2.context['the_researched_food'], mock_food1)
@@ -62,6 +64,7 @@ class ResearchViewsTests(TestCase):
     def test_food_view(self):
         crud.create_food("1", "c", "food1")
         response = self.client.get(reverse('research:food-page', kwargs={'pk': 1}))
+        self.assertTemplateUsed(response, "research/food.html")
         self.assertContains(response, "food1", status_code=200)
 
 
@@ -85,6 +88,7 @@ class ResearchViewsTestsWithTransaction(TransactionTestCase):
 
         # test with unlogged user :
         response_no_user_logged = self.client.get(reverse('research:form-page'), {'research': "od1"})
+        self.assertTemplateUsed(response_no_user_logged, "research/result.html")
         self.assertIn('the_researched_food', response_no_user_logged.context.keys())
         self.assertEqual(response_no_user_logged.context['the_researched_food'], mock_food1)
         self.assertContains(response_no_user_logged, mock_food1.name, status_code=200)

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                CONTEXT --> uidb64={{ uidb64 }} - uid={{ uid }} - token={{ token }}
+                <h1 class="text-white font-weight-bold">Réinitialisation du mot de passe demandée pour {{ email }}.
+                Cliquez sur le lien suivant : {{ protocol}}://{{ domain }}{% url 'account:pwdresetlink' uidb64=uid token=token %}</h1>
+              <hr class="divider">
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock header %}

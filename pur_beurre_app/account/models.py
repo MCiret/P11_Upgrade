@@ -34,6 +34,7 @@ class MyUserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
+
 class User(AbstractBaseUser, PermissionsMixin):
 
     # To have a unique email field in DB...
@@ -49,8 +50,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     REQUIRED_FIELDS = []
 
     objects = MyUserManager()
-
-    bookmarks = models.ManyToManyField(Food)
 
     def get_absolute_url(self):
         return reverse('research:home-page')
@@ -73,3 +72,11 @@ class User(AbstractBaseUser, PermissionsMixin):
         "Is the user a member of staff?"
         # Simplest possible answer: All admins are staff
         return self.is_admin
+
+
+class UsedPassword(models.Model):
+    pwd = models.TextField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.pwd

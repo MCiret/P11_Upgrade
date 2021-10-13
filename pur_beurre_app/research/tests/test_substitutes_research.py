@@ -128,7 +128,6 @@ class SubstitutesResearchTestsOnlySQL(TransactionTestCase):
                    Instead of returning the best nutriscore, it returns the worst.")
         self.assertQuerysetEqual(substituted_food, (Food.objects.filter(barcode="2")), ordered=False)
 
-
     def test_sql_in_look_for_foods_matching_user_research_function(self):
         # With "food" research keyword, all foods in db should be returned :
         self.assertQuerysetEqual(subr.look_for_foods_matching_user_research("food")['many_researched_foods'],

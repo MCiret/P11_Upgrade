@@ -9,7 +9,7 @@
             "name": "Python : Django",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/manage.py",
+            "program": "${workspaceFolder}/pur_beurre_app/manage.py",
             "args": [
                 "runserver"
             ],

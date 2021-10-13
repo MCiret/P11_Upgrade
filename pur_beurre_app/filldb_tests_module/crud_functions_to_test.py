@@ -1,6 +1,6 @@
 from django.db.utils import IntegrityError
 from research.models import Food, Category
-from account.models import User
+from account.models import User, UsedPassword
 from typing import Union
 
 ####################################################################################################################
@@ -12,6 +12,7 @@ from typing import Union
 #   - définir une classe qui remplit la BD avec des données lorsqu'elle est instanciée                             #
 #     et dont héritent toutes les classes de tests...                                                              #
 ####################################################################################################################
+
 
 def create_food(barcode, nutriscore, name) -> Union[Food, bool]:
     food = Food(barcode=barcode,
@@ -60,6 +61,11 @@ def create_user(email: str, password: str) -> Union[User, bool]:
     except IntegrityError:
         return False
     return user
+
+
+def change_user_pwd(user: User, new_pwd: str):
+    UsedPassword(pwd=user.password, user=user).save()
+    user.set_password(new_pwd)
 
 
 def create_bookmark(user_email: str, substitute_barcode: int) -> bool:
