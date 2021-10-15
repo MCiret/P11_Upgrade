@@ -9,7 +9,7 @@
               <hr class="divider">
             </div>
             <div class="col-lg-8 align-self-baseline">
-                <form class="text-white-75 justify-content-center" method="POST" action="{% url 'account:pwdresetform' %}">
+                <form class="text-white-75 justify-content-center" method="POST">
                     {% csrf_token %} <!-- Afficher le csrf_token ce qui permet de le générer et automatiquement inclus dans le formulaire -->
 
                     {{ form.as_p }}

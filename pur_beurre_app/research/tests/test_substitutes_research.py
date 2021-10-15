@@ -123,9 +123,9 @@ class SubstitutesResearchTestsOnlySQL(TransactionTestCase):
                               Category.objects.get(name='c3').id]
 
         substituted_food = subr.look_for_substitutes(food_categories_id, "c")
-        if substituted_food[0].name == "food5":
-            print("Next assertion in this test fails because the substitute research algorithm seems not to work..\
-                   Instead of returning the best nutriscore, it returns the worst.")
+        # if substituted_food[0].name == "food5":
+        #     print("Next assertion in this test fails because the substitute research algorithm seems not to work..\
+        #            Instead of returning the best nutriscore, it returns the worst.")
         self.assertQuerysetEqual(substituted_food, (Food.objects.filter(barcode="2")), ordered=False)
 
     def test_sql_in_look_for_foods_matching_user_research_function(self):

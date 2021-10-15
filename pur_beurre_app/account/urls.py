@@ -12,7 +12,6 @@ urlpatterns = [
     path('accounts/pwdreset/', PwdResetView.as_view(), name="pwdreset"),
     path('accounts/pwdresetdone/', PwdResetDoneView.as_view(), name="pwdresetdone"),
     path('accounts/pwdresetconfirm/<uidb64>/<token>', PwdResetConfirmView.as_view(), name="pwdresetlink"),
-    path('accounts/pwdresetconfirm/', PwdResetConfirmView.as_view(), name="pwdresetform"),
     path('accounts/pwdresetcomplete/', PwdResetCompleteView.as_view(), name="pwdresetcomplete"),
     path('accounts/logout/', UserLogoutView.as_view(), name="user-logout"),
 ]

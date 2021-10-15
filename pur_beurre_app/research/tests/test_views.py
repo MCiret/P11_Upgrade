@@ -93,9 +93,9 @@ class ResearchViewsTestsWithTransaction(TransactionTestCase):
         self.assertEqual(response_no_user_logged.context['the_researched_food'], mock_food1)
         self.assertContains(response_no_user_logged, mock_food1.name, status_code=200)
         self.assertIn('substitutes_foods', response_no_user_logged.context.keys())
-        if b'food2' in response_no_user_logged.content and b'food3' not in response_no_user_logged.content:
-            print("Next assertion in this test fails because the substitute research algorithm seems not to work..\
-                   Instead of returning the best nutriscore, it returns the worst.")
+        # if b'food2' in response_no_user_logged.content and b'food3' not in response_no_user_logged.content:
+        #     print("Next assertion in this test fails because the substitute research algorithm seems not to work..\
+        #            Instead of returning the best nutriscore, it returns the worst.")
         self.assertEqual(response_no_user_logged.context['substitutes_foods'].get(), mock_food3)
         self.assertNotContains(response_no_user_logged, "Sauvegard", status_code=200)
 

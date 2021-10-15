@@ -1,8 +1,6 @@
-import base64
-from django.test import TestCase, RequestFactory
+from django.test import TestCase
 from unittest import mock
 from django.urls import reverse
-from django.core import mail
 import filldb_tests_module.crud_functions_to_test as crud
 from account.models import User
 from account.views import UserAccountView
@@ -140,21 +138,21 @@ class AccountViewsTests(TestCase):
 
         # Test when user follow the link received by email to display the pwd reset form :
         resp_get = self.client.get(reverse('account:pwdresetlink',
-                                kwargs = {
-                                    'uidb64': user_uid,
-                                    'token': user_token,
-                                }), follow=True)
+                                           kwargs={
+                                            'uidb64': user_uid,
+                                            'token': user_token,
+                                            }), follow=True)
         self.assertTemplateUsed(resp_get, "account/pwdresetconfirm-account.html")
+        self.assertIsInstance(resp_get.context['form'], UserPwdResetForm)
 
         resp_post = self.client.post(reverse('account:pwdresetlink',
-                                             kwargs = {'uidb64': user_uid,
-                                                       'token': 'set-password'}),
+                                             kwargs={'uidb64': user_uid,
+                                                     'token': 'set-password'}),
                                      {'new_password1': "tktk1598",
                                       'new_password2': "tktk1598"},
                                      follow=True)
         self.assertTemplateUsed(resp_post, "account/pwdresetcomplete-account.html")
         self.assertTrue(self.client.login(username="user_test@gmail.com", password="tktk1598"))
-
 
     def test_user_logout_view(self):
         crud.create_user("user_test@gmail.com", "titi6789")
