@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3"
 
 services:
   db:
@@ -21,7 +21,7 @@ services:
     env_file:
       - ./.env.dev
     environment:
-      NEW_RELIC_APP_NAME: P10_pur_beurre_app_dev
+      NEW_RELIC_APP_NAME: P11_purbeurre_scaleway
     depends_on:
       - db
 

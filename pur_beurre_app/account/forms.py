@@ -44,6 +44,3 @@ class UserPwdResetForm(auth_forms.SetPasswordForm):
 
 class UserPwdChangeForm(UserPwdResetForm, auth_forms.PasswordChangeForm):
     pass
-
-
-

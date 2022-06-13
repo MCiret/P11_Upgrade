@@ -5,3 +5,6 @@ env/
 .env.prod
 .env.prod.db
 my_secrets/
+pur_beurre_app/t
+pur_beurre_app/static/node_modules/
+pur_beurre_app/static/src/

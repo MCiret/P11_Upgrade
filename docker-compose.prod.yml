@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3"
 #######################################################################################
 # NB: this docker-compose file was wrote to be run/up with already built images for : #
 # - web service = web_img                                                             #

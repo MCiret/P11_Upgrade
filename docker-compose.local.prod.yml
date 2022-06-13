@@ -1,11 +1,4 @@
-version: "3.9"
-#######################################################################################
-# NB: this docker-compose file was wrote to be run/up with already built images for : #
-# - web service = web_img                                                             #
-# - nginx service = nginx_img                                                         #
-# => Actually these 2 images are built during GitHub Actions CI/CD workflow           #
-# (see .github/workflows/CI_CD_workflow.yml)                                          #
-#######################################################################################
+version: "3"
 
 services:
   db:

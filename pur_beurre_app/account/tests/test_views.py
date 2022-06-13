@@ -93,20 +93,22 @@ class AccountViewsTests(TestCase):
         response_user_logged = self.client.get(reverse('account:user-account'))
         # Test modify password twice but try to re-use the same
         self.client.post(reverse('account:user-account'), {
-                                 'old_password': 'titi6789',
-                                 'new_password1': 'tutu1357',
-                                 'new_password2': 'tutu1357'
-                                })
+                         'old_password': 'titi6789',
+                         'new_password1': 'tutu1357',
+                         'new_password2': 'tutu1357'
+                         }
+                         )
+
         # Test change pwd with an allowed one (not already used) :
         self.assertTemplateUsed(response_user_logged, "account/user-account.html")
         self.assertNotContains(response_user_logged, "Vous avez déjà utilisé ce mot de passe.", status_code=200)
 
         # Test change pwd with a NOT allowed one (already used) :
         response_user_logged = self.client.post(reverse('account:user-account'), {
-                                                        'old_password': 'tutu1357',
-                                                        'new_password1': 'titi6789',
-                                                        'new_password2': 'titi6789'
-                                                        })
+                                                'old_password': 'tutu1357',
+                                                'new_password1': 'titi6789',
+                                                'new_password2': 'titi6789'
+                                                })
         self.assertTemplateUsed(response_user_logged, "account/user-account.html")
         self.assertContains(response_user_logged, "Vous avez déjà utilisé ce mot de passe.", status_code=200)
 
@@ -118,30 +120,28 @@ class AccountViewsTests(TestCase):
 
         # Test if pwdresetdone-account.html is well displayed after email input :
         response = self.client.post(reverse('account:pwdreset'), {
-                                            'email': 'user_test@gmail.com',
-                                            }, follow=True)
+                                    'email': 'user_test@gmail.com',
+                                    }, follow=True)
         self.assertTemplateUsed(response, "account/pwdresetdone-account.html")
 
         # Test that pwdresetemail-account.html is not send as email if email input does not exist in db :
         response = self.client.post(reverse('account:pwdreset'), {
-                                            'email': 'user_test2@gmail.com',
-                                            })
+                                    'email': 'user_test2@gmail.com',
+                                    })
         self.assertTemplateNotUsed(response, "account/pwdresetemail-account.html")
 
         # Test if pwdresetemail-account.html is well send as email :
         response = self.client.post(reverse('account:pwdreset'), {
-                                            'email': 'user_test@gmail.com',
-                                            })
+                                    'email': 'user_test@gmail.com',
+                                    })
         user_token = response.context['token']
         user_uid = response.context['uid']
         self.assertTemplateUsed(response, "account/pwdresetemail-account.html")
 
         # Test when user follow the link received by email to display the pwd reset form :
         resp_get = self.client.get(reverse('account:pwdresetlink',
-                                           kwargs={
-                                            'uidb64': user_uid,
-                                            'token': user_token,
-                                            }), follow=True)
+                                           kwargs={'uidb64': user_uid,
+                                                   'token': user_token}), follow=True)
         self.assertTemplateUsed(resp_get, "account/pwdresetconfirm-account.html")
         self.assertIsInstance(resp_get.context['form'], UserPwdResetForm)
 
