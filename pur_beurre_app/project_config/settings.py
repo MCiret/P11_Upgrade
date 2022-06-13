@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '51.15.239.110', 'purbeurre-mcda.tk']
 # DEFAULT_LOGGING['handlers']['console']['filters'] = [] # uncomment to have 500 error in terminal
 
 sentry_sdk.init(
-    dsn="https://384c1c3d226040f0a2ab392b12e5d5ca@o998064.ingest.sentry.io/5956506",
+    dsn="https://2574745e8a194ee1a26a29d909728445@o998064.ingest.sentry.io/6501954",
     integrations=[DjangoIntegration()],
 
     # Set traces_sample_rate to 1.0 to capture 100%
