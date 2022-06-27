@@ -3,6 +3,8 @@
 =====================
 **Searching for food substitution in Open Food Facts french database**
 
+https://purbeurre-mcda.tk/
+
 |Status badge| |UIlanguage badge| |vPython badge| |vBootstrap badge|
 
 *****************
@@ -14,9 +16,8 @@ TABLE OF CONTENTS
     * `Features`_
 
 2. `INSTALLATION`_
-    * `Application`_
-    * `Database`_
-    * `Required libraries`_
+    * `Using Docker`_
+    * `Using Python Package Manager (pip) and Virtual environment`_
 
 3. `OPEN FOOD FACTS API USAGE`_
 
@@ -73,10 +74,29 @@ Features
 INSTALLATION
 ============
 
-⚠️ These steps do not concern the "Dockerized" version of this app.
+This app is running : https://purbeurre-mcda.tk/ Deployment was done using a CI/CD workflow (GitHub Actions) where the Django app Docker image is build and send to the hosted server (ssh) with the docker-compose.prod.yml file. To complete this deployment, there are several pre-requisite steps that are to be done manually like copying .env files, nginx folder etc.
+
+
+However, if you want to run this app locally, there are 2 ways :
+1) the simplest is to use local Docker version (see docker_install_ section)
+2) the still classic way is to use the Python Package Manager (pip) to install needed libs in a created Virtual environment (see classic_install_ section)
+
+
+Using Docker
+------------
+
+.. _docker_install:
+
+This app could be installed and run locally using "Dockerization" with the docker-compose.local.prod.yml file.
+** This section has to be written **
+
+Using Python Package Manager (pip) and Virtual environment
+----------------------------------------------------------
+
+.. _classic_install:
 
 Application
------------
+^^^^^^^^^^^
 
 1) Download the project : use the "Code" (green button) and unzip the P11_Upgrade.zip file.
 2) Python3 comes with Python Package Manager (pip) else you have to install it (https://pip.pypa.io/en/stable/installing/)
@@ -121,19 +141,21 @@ Application
 8) Follow the http:// link given by Django starting message on the terminal output (usually http://127.0.0.1:8000/) to display interface in your browser.
 
 Database
---------
+^^^^^^^^
 
 .. _db_settingup:
 
+*NB: this step is required only if you are not using Docker to install and run the app*
+
 1) Install your favorite SGDB.
-2) Set up projetc_config/settings.py --> variable DATABASES with your database connection parameters (see comments above the variable declaration for Django documentation link).
+2) Create a database and set up project_config/settings.py --> variable DATABASES with your database connection parameters (for more infos, see Django documentation link in comments above).
 3) Run personalised Django command to request Open Food Facts API and insert food products (and categories) in database : (UNIX) $ python manage.py filldb (DOS) $ py manage.py filldb
 
 .. note:: you can modify which data are requested from Open Food Facts API.
 
 
 Required libraries
-------------------
+^^^^^^^^^^^^^^^^^^
 
 Python libraries to install in your virtual environment : $ pip install -r requirements.txt
 
