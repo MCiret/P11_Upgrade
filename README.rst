@@ -88,7 +88,9 @@ Using Docker
 .. _docker_install:
 
 This app could be installed and run locally using "Dockerization" with the docker-compose.local.prod.yml file.
-** This section has to be written **
+
+
+ ℹ️ **This section has to be written.**
 
 Using Python Package Manager (pip) and Virtual environment
 ----------------------------------------------------------
