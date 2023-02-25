@@ -165,7 +165,7 @@ The categories tags and page_nb are gotten from research/management/off_research
 **note:** categories tags have to exists in OFF. They are not case sensitive but you have to use underscore te replace whitespace characters.
 
 
-.. |vPython badge| image:: https://img.shields.io/badge/Python-3.9-blue.svg
+.. |vPython badge| image:: https://img.shields.io/badge/Python-3.10-blue.svg
 .. |vBootstrap badge| image:: https://img.shields.io/badge/Bootstrap-5-purple.svg
 
 .. |Status badge| image:: https://img.shields.io/badge/Status-Production-green.svg
