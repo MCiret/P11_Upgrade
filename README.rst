@@ -17,7 +17,7 @@ TABLE OF CONTENTS
 
 2. `INSTALLATION`_
     * `Using Docker`_
-    * `Using Python Package Manager (pip) and Virtual environment`_
+    * `Using Python Package Manager (pipenv)`_
 
 3. `OPEN FOOD FACTS API USAGE`_
 
@@ -92,8 +92,8 @@ This app could be installed and run locally using "Dockerization" with the docke
 
  ℹ️ **This section has to be written.**
 
-Using Python Package Manager (pip) and Virtual environment
-----------------------------------------------------------
+Using Python Package Manager (pipenv)
+-------------------------------------
 
 .. _classic_install:
 
@@ -108,28 +108,17 @@ Application
     NB: the symbol $ flags the commands prompt
 
     * UNIX operating system :
-        3.1) Install the Python module : $ pip install venv
+        3.1) Install the Python module : ``$ pip install pipenv``
 
-        3.2) Navigate to the project main directory using command prompt : $ cd .....
+        3.2) Install project requirements (i.e Pipfile list) : ``$ pipenv install``
 
-        3.3) Create a virtual environment : $ python -m venv name_of_your_virtual_env
-
-        3.4) Activate the virtual environment : $ source name_of_your_virtual_env/bin/activate
+        3.3) Activate the virtual environment : ``$ pipenv shell``
 
 
-    * DOS operating system :
-        3.1) Install the Python module : $ pip install venv
-
-        3.2) Navigate to the project main directory using command prompt : $ cd .....
-
-        3.3) Create a virtual environment : $ py -m venv name_of_your_virtual_env
-
-        3.4) Activate the virtual environment : $ .\name_of_your_virtual_env\Scripts\activate
+    * DOS operating system : same as UNIX os above..
 
 
-4) Install required libraries : see the Required libraries section below.
-
-5) Environment variables to be set/adapted :
+4) Environment variables to be set/adapted :
 
     * project_config/settings.py :
 
@@ -138,9 +127,11 @@ Application
 
 6) Install and fill the database (see db_settingup_ below).
 
-7) Run the code source main.py file : (UNIX) $ python manage.py runserver (DOS) $ py manapge.py runserver
+7) Collect static files : (UNIX) ``$ python manage.py collectstatic`` (DOS) ``$ py manage.py collectstatic``
 
-8) Follow the http:// link given by Django starting message on the terminal output (usually http://127.0.0.1:8000/) to display interface in your browser.
+8) Run the code source main.py file : (UNIX) ``$ python manage.py runserver`` (DOS) ``$ py manage.py runserver``
+
+9) Follow the http:// link given by Django starting message on the terminal output (usually http://127.0.0.1:8000/) to display interface in your browser.
 
 Database
 ^^^^^^^^
@@ -150,16 +141,12 @@ Database
 *NB: this step is required only if you are not using Docker to install and run the app*
 
 1) Install your favorite SGDB.
-2) Create a database and set up project_config/settings.py --> variable DATABASES with your database connection parameters (for more infos, see Django documentation link in comments above).
-3) Run personalised Django command to request Open Food Facts API and insert food products (and categories) in database : (UNIX) $ python manage.py filldb (DOS) $ py manage.py filldb
+2) Create a database and Set up variable DATABASES (project_config/settings.py) with your database connection parameters.
+3) Database migration (i.e tables creation) : (UNIX) ``$ python manage.py migrate`` (DOS) ``$ py manage.py migrate``
+4) Run personalised Django command to request Open Food Facts API and insert food products (and categories) in database : (UNIX) ``$ python manage.py filldb`` (DOS) ``$ py manage.py filldb``
 
-.. note:: you can modify which data are requested from Open Food Facts API.
+**note:** you can modify which data are requested from Open Food Facts API.
 
-
-Required libraries
-^^^^^^^^^^^^^^^^^^
-
-Python libraries to install in your virtual environment : $ pip install -r requirements.txt
 
 OPEN FOOD FACTS API USAGE
 =========================
@@ -169,13 +156,13 @@ See research/management/commands/filldb.py
 The build_get_request() static method (called by handle() method) shows you the used request.
 https://documenter.getpostman.com/view/8470508/SVtN3Wzy#58efae40-73c3-4907-9a88-785faff6ffb1
 
-.. warning:: if you modify the fields parameter then you will have to adapt the front-end part of the application.
+**Warning:** if you modify the fields parameter then you will have to adapt the front-end part of the application.
 
 
 Nevertheless, there is no problem if you would like to modify categories, page_size (number of product per page) and/or page (number of page per request).
 The categories tags and page_nb are gotten from research/management/off_research_params.json. This file is modified (rewritten) each time the filldb command is used, to "feed" the database, the page_nb parameter is incremented.
 
-.. note:: categories tags have to exists in OFF. They are not case sensitive but you have to use underscore te replace whitespace characters.
+**note:** categories tags have to exists in OFF. They are not case sensitive but you have to use underscore te replace whitespace characters.
 
 
 .. |vPython badge| image:: https://img.shields.io/badge/Python-3.9-blue.svg
