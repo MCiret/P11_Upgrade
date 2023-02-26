@@ -4,7 +4,7 @@
 ###########
 
 # pull official base image
-FROM python:3.9-alpine as builder
+FROM python:3.10-alpine as builder
 
 # set work directory
 WORKDIR /code
@@ -24,7 +24,8 @@ COPY . .
 RUN flake8 --ignore=E501,F401 .
 
 # install dependencies
-COPY ./requirements.txt .
+COPY ./Pipfile .
+RUN pip install pipenv && pipenv requirements > requirements.txt
 RUN pip wheel --no-cache-dir --no-deps --wheel-dir /code/wheels -r requirements.txt
 
 
@@ -33,7 +34,7 @@ RUN pip wheel --no-cache-dir --no-deps --wheel-dir /code/wheels -r requirements.
 #########
 
 # pull official base image
-FROM python:3.9-alpine as mainimg
+FROM python:3.10-alpine as mainimg
 
 # create directory for the app user
 RUN mkdir -p /home/app

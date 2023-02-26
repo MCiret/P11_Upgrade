@@ -1,9 +1,12 @@
 version: "3"
 #######################################################################################
-# NB: this docker-compose file was wrote to be run/up with already built images for : #
-# - web service = web_img                                                      #
-# => Actually this image is built during GitHub Actions CI/CD workflow           #
-# (see .github/workflows/CI_CD_workflow.yml)                                          #
+# NB: this docker-compose file was wrote to be run/up with already built images for : #
+# - web service = web_img                                                             #
+#                                                                                     #
+# => because it's mainly used via GitHub Actions CI/CD workflow. The web_img image is
+# builts during the .github/workflows/CI_CD_workflow.yml execution..                  #
+#                                                                                     #
+# NB: Use ./docker-compose.local.prod.yml that builds the image..                     #
 #######################################################################################
 
 services:
