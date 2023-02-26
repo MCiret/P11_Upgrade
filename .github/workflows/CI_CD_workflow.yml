@@ -40,7 +40,8 @@ jobs:
     - name: Test with unittest + selenium
       run: |
         cd pur_beurre_app/
-        pipenv run python3 manage.py test
+        pipenv install
+        pipenv run python manage.py test
 
   # docker_build_image:
   #   runs-on: ubuntu-latest
