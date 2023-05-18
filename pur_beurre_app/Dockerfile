@@ -6,6 +6,8 @@ WORKDIR /code
 COPY . .
 RUN apk update \
     && apk add netcat-openbsd postgresql-dev gcc python3-dev musl-dev \
+    && pip install pipenv \
+    && pipenv requirements > requirements.txt \
     && pip install -r requirements.txt
 COPY entrypoint.sh .
 COPY . .

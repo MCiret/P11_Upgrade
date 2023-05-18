@@ -9,7 +9,7 @@ class ResearchFormTest(LiveServerTestCase):
     def setUp(self):
         self.options = webdriver.FirefoxOptions()
         self.options.headless = True
-        self.selenium = webdriver.Firefox(firefox_options=self.options)
+        self.selenium = webdriver.Firefox(firefox_options=self.options, firefox_binary="/usr/bin/firefox-esr")
         self.selenium.get(self.live_server_url)
 
     def tearDown(self):

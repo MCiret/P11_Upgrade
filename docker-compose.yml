@@ -14,12 +14,14 @@ services:
     build:
       context: ./pur_beurre_app
       dockerfile: Dockerfile
-    command: newrelic-admin run-program gunicorn project_config.wsgi:application --bind 0.0.0.0:8000
-    # command: python manage.py runserver 0.0.0.0:8000
+    command: newrelic-admin run-program gunicorn project_config.wsgi:application --bind 0.0.0.0:8001
+    # command: python manage.py runserver 0.0.0.0:8001
     ports:
-      - "8000:8000"
+      - "8001:8001"
     env_file:
       - ./.env.dev
+    volumes:
+      - ./pur_beurre_app:/code # watch code change and update container (only during development..)
     environment:
       NEW_RELIC_APP_NAME: P11_purbeurre_scaleway
     depends_on:
