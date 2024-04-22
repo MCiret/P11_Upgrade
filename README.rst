@@ -1,9 +1,7 @@
-=====================
-"Pur Beurre" project
-=====================
+===============================
+"Pur Beurre" (learning) project
+===============================
 **Searching for food substitution in Open Food Facts french database**
-
-https://purbeurre-mcda.tk/
 
 |Status badge| |UIlanguage badge| |vPython badge| |vBootstrap badge|
 
@@ -12,6 +10,7 @@ TABLE OF CONTENTS
 *****************
 
 1. `DESCRIPTION`_
+    * `Learning project`_
     * `Summary`_
     * `Features`_
 
@@ -23,6 +22,15 @@ TABLE OF CONTENTS
 
 DESCRIPTION
 ===========
+
+Learning project
+----------------
+This Web app has been developed during OpenClassrooms training course "Python Application Development".
+
+**GOAL** :
+
+* use CI/CD workflow for Web app deployment
+* debug and enhance an existing Web app
 
 Summary
 -------
@@ -74,7 +82,7 @@ Features
 INSTALLATION
 ============
 
-This app is running : https://purbeurre-mcda.tk/ Deployment was done using a CI/CD workflow (GitHub Actions) where the Django app Docker image is build and send to the hosted server (ssh) with the docker-compose.prod.yml file. To complete this deployment, there are several pre-requisite steps that are to be done manually like copying .env files, nginx folder etc.
+Deployment could be done using a CI/CD workflow (GitHub Actions) where the Django app Docker image is build and send to the hosted server (ssh) with the docker-compose.prod.yml file. To complete this deployment, there are several pre-requisite steps that are to be done manually like copying .env files, nginx folder etc.
 
 
 However, if you want to run this app locally, there are 2 ways :
@@ -89,8 +97,9 @@ Using Docker
 
 This app could be installed and run locally using "Dockerization" with the docker-compose.local.prod.yml file.
 
-
  ℹ️ **This section has to be written.**
+
+
 
 Using Python Package Manager (pipenv)
 -------------------------------------
@@ -105,25 +114,19 @@ Application
 
 3) Set up a virtual environment :
 
-    NB: the symbol $ flags the commands prompt
+    3.1) ``$ pip install pipx`` then ``$ pipx install pipenv``
 
-    * UNIX operating system :
-        3.1) Install the Python module : ``$ pip install pipenv``
+    3.2) Create a virtual environment and Install project requirements (Pipfile) : ``$ pipenv install``
 
-        3.2) Install project requirements (i.e Pipfile list) : ``$ pipenv install``
-
-        3.3) Activate the virtual environment : ``$ pipenv shell``
-
-
-    * DOS operating system : same as UNIX os above..
+    3.3) Activate the virtual environment : ``$ pipenv shell``
 
 
 4) Environment variables to be set/adapted :
 
     * project_config/settings.py :
 
-        - variable SECRET_KEY (key to securing signed data) set with DJANGO_KEY enviro. variable name
-        - variable DATABASES['default']['PASSWORD'] set with POSTGRE_PWD enviro. variable name
+        - DJANGO_KEY used to set SECRET_KEY (key to securing signed data)
+        - POSTGRE_PWD used to set DATABASES['default']['PASSWORD']
 
 6) Install and fill the database (see db_settingup_ below).
 
