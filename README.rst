@@ -3,7 +3,7 @@
 ===============================
 **Searching for food substitution in Open Food Facts french database**
 
-|Status badge| |UIlanguage badge| |vPython badge| |vBootstrap badge|
+|vPython badge| |vBootstrap badge| |UIlanguage badge|
 
 *****************
 TABLE OF CONTENTS
@@ -26,11 +26,14 @@ DESCRIPTION
 Learning project
 ----------------
 This Web app has been developed during OpenClassrooms training course "Python Application Development".
+See https://github.com/MCiret/P8_PurBeurre_WebApp for running/living version.
 
 **GOAL** :
 
 * use CI/CD workflow for Web app deployment
-* debug and enhance an existing Web app
+* debug and enhance an existing Web app :
+    * set HTTPS protocol
+    * add users account password features (update and forgot)
 
 Summary
 -------
@@ -171,5 +174,4 @@ The categories tags and page_nb are gotten from research/management/off_research
 .. |vPython badge| image:: https://img.shields.io/badge/Python-3.10-blue.svg
 .. |vBootstrap badge| image:: https://img.shields.io/badge/Bootstrap-5-purple.svg
 
-.. |Status badge| image:: https://img.shields.io/badge/Status-Production-green.svg
 .. |UIlanguage badge| image:: https://img.shields.io/badge/UILang-French-9cf.svg
